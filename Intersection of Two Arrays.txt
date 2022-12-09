@@ -1,0 +1,57 @@
+var intersection = function(nums1, nums2) {
+
+   var x = [];
+  
+  for(let i=0;inums2.length;i++){
+     console.log(parseInt(i));
+     let countsonums1= nums1.filter(e = e === nums2[i]).length;
+       let countsonums2=nums2.filter(f = f === nums2[i]).length;
+  console.log(countsonums1);
+   console.log(countsonums2);
+   if(countsonums1==0  countsonums2==0 ){
+    continue;
+  }
+  if(countsonums1==countsonums2){
+     for(let j=1;j=countsonums2;j++){
+        let checkarr1= x.filter(e = e === nums2[i]).length;
+        console.log(checkarr1);
+        if(checkarr11){
+       x.push(nums2[i]);
+        }
+    console.log(sonums2[i]);  
+    console.log(x); 
+     }
+     i+=countsonums2-1;
+
+      console.log(i+countsonums2);
+  }
+  
+  else if(countsonums1countsonums2){
+      for(let k=1;k=countsonums1;k++){
+        let checkarr2= x.filter(e = e === nums2[i]).length;
+        if(checkarr21){
+         x.push(nums2[i]);
+        }
+          console.log(sonums2[i]); 
+     }
+        i+=countsonums1-1;
+      console.log(i+countsonums2);
+  }
+  else{
+       for(let k=1;k=countsonums2;k++){
+         console.log(sonums2[i]);
+        let checkarr3= x.filter(e = e === nums2[i]).length;
+        if(checkarr31){
+          x.push(nums2[i]);
+        }
+     }
+    
+      i+=countsonums2-1;
+     console.log(i+countsonums2);
+  }
+  
+  }
+  
+  return x;
+  }
+  console.log(intersection([93,57,18,68,93,31,36,11,27,82,3,91,58,36,21,26,72,53,15,9,56,68,89,37,54,40,87,61,82,24,8,68,80,36,31,11,51,45,66,78,70,93,44,45,19,23],[24,30,85,26,19,82,20,92,34,31,15,43,83,40,15,0,87,60,11,2,0,26,49,14,19,18,55,21,96,68,30,50,11,59,8,89,51,59,76,16,59,28,88,3,87,94,0,36,70,80,8,65,84,88,28,91,96]));
